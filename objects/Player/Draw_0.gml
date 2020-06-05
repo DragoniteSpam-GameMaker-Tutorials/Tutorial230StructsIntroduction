@@ -2,6 +2,7 @@ draw_text(160, 160, "Inventory");
 
 for (var i = 0; i < ds_list_size(inventory); i++) {
     var item_pocket = inventory[| i];
+    // struct members can be accessed with the dot operator, the same as instances
     draw_text(160 + 160 * i, 192, item_pocket.name);
     for (var j = 0; j < ds_list_size(item_pocket.contents); j++) {
         var item_stack = item_pocket.contents[| j];

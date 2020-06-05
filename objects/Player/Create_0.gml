@@ -1,6 +1,8 @@
 inventory = ds_list_create();
 
 var item_pocket_swords = {
+    // structs defined in this manner use a colon instead of the equals symbol
+    // for assignment, and key-value pairs are separated by commas instead of semicolons
     name: "Swords",
     contents: ds_list_create(),
 };
